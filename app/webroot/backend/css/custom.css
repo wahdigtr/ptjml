@@ -1,0 +1,19 @@
+
+section.content{
+	min-height:530px;
+}
+
+.sidebar-toggle{
+	display: none;
+}
+
+.tab-pane{
+	padding-top: 10px;
+}
+
+
+@media(max-width: 768px){
+	.sidebar-toggle{
+		display: block;
+	}
+}

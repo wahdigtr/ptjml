@@ -1,0 +1,524 @@
+.nobreak {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -o-column-break-inside: avoid;
+  -ms-column-break-inside: avoid;
+  display: table;
+}
+/* Grid System 12 Columns
+/* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+.col-1,
+.col-2,
+.col-2i,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11 {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.col-1 {
+  width: 8.333333333333332%;
+}
+.col-2 {
+  width: 16.666666666666664%;
+}
+.col-2i {
+  width: 20%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.333333333333336%;
+}
+.col-8 {
+  width: 66.66666666666666%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333333334%;
+}
+.col-11 {
+  width: 91.66666666666666%;
+}
+.col-12 {
+  width: 100%;
+}
+.color-selector {
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 0;
+  margin-top: -166px;
+  background: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 10px 40px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 10px 40px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px 10px rgba(0, 0, 0, 0.1);
+  width: 203px;
+  box-sizing: border-box;
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -ms-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+  left: -203px;
+}
+.color-selector .show-colors {
+  position: absolute;
+  top: 17px;
+  right: -32px;
+  width: 32px;
+  height: 32px;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #ffffff;
+  line-height: 32px;
+  font-size: 16px;
+  text-align: center;
+}
+.color-selector .colors-content {
+  text-align: center;
+  padding: 22px 22px 0 22px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.color-selector .colors-content h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #26323c;
+}
+.color-selector .colors-content h3 {
+  font-size: 12px;
+  color: #26323c;
+}
+.color-selector .colors-content hr {
+  display: block;
+  border: none;
+  height: 1px;
+  background: #edf2f6;
+  position: relative;
+  margin-bottom: 10px;
+}
+.color-selector .colors-content hr:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #edf2f6;
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+.color-selector .colors-content hr:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #edf2f6;
+  position: absolute;
+  top: 0;
+  right: -100%;
+}
+.color-selector .colors-choose {
+  padding: 0 22px 22px 22px;
+  box-sizing: border-box;
+}
+.color-selector .colors-choose .colors {
+  width: 48%;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 4%;
+  margin-right: 4%;
+}
+.color-selector .colors-choose .colors:nth-of-type(2n) {
+  margin-right: 0;
+}
+.color-selector .colors-choose .colors .color {
+  width: 100%;
+  height: 30px;
+  -webkit-box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.color-selector .colors-choose .colors .color:hover {
+  opacity: 0.6;
+}
+.color-selector .colors-choose .colors .colorSelector {
+  position: absolute;
+  bottom: 0;
+  width: 364px;
+  background: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: none;
+  padding: 10px;
+  -webkit-box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.color-selector .background-choose {
+  box-sizing: border-box;
+}
+.color-selector .background-choose .backgrounds {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  float: left;
+  margin-right: 8%;
+  margin-bottom: 8%;
+}
+.color-selector .background-choose .backgrounds:nth-child(4n+4) {
+  margin-right: 0;
+}
+.color-selector .background-choose .backgrounds .background {
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.color-selector .background-choose .backgrounds .background:hover {
+  opacity: 0.6;
+}
+.color-selector .background-choose .backgrounds .background.background1 {
+  background: url(images/colorpicker/background/1.png);
+}
+.color-selector .background-choose .backgrounds .background.background2 {
+  background: url(images/colorpicker/background/2.png);
+}
+.color-selector .background-choose .backgrounds .background.background3 {
+  background: url(images/colorpicker/background/3.png);
+}
+.color-selector .background-choose .backgrounds .background.background4 {
+  background: url(images/colorpicker/background/4.png);
+}
+.color-selector .background-choose .backgrounds .background.background5 {
+  background: url(images/colorpicker/background/5.png);
+}
+.color-selector .background-choose .backgrounds .background.background6 {
+  background: url(images/colorpicker/background/6.png);
+}
+.color-selector .background-choose .backgrounds .background.background7 {
+  background: url(images/colorpicker/background/7.png);
+}
+.color-selector .background-choose .backgrounds .background.background8 {
+  background: url(images/colorpicker/background/8.png);
+}
+.color-selector .background-choose .backgrounds .colorSelector {
+  position: absolute;
+  top: 100%;
+  width: 364px;
+  background: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: none;
+  padding: 10px;
+  -webkit-box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+}
+.colorpicker {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  background: url(images/colorpicker/slider.png) no-repeat 174px 0;
+  background-size: contain;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+}
+.colorpicker input {
+  background-color: transparent !important;
+  border: 1px solid transparent;
+  position: absolute;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  right: 11px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  height: 22px;
+  width: auto;
+  line-height: 22px;
+}
+.colorpicker_color {
+  width: 150px;
+  height: 150px;
+  left: 4px;
+  top: 0;
+  position: absolute;
+  background: #ff0000;
+  overflow: hidden;
+  cursor: crosshair;
+}
+.colorpicker_color div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: url(images/colorpicker/colorpicker_overlay.png);
+}
+.colorpicker_color div div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  overflow: hidden;
+  background: url(images/colorpicker/colorpicker_select.gif);
+  margin: -5px 0 0 -5px;
+}
+.colorpicker_hue {
+  position: absolute;
+  top: 0;
+  left: 162px;
+  width: 35px;
+  height: 150px;
+  cursor: n-resize;
+}
+.colorpicker_hue div {
+  position: absolute;
+  width: 35px;
+  height: 9px;
+  overflow: hidden;
+  background: url(images/colorpicker/custom_indic.gif) left top;
+  margin: -4px 0 0 0;
+  left: 0px;
+}
+.colorpicker_new_color {
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  left: 209px;
+  top: 0;
+  background: #ff0000;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.colorpicker_current_color {
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  left: 290px;
+  top: 0;
+  background: #ff0000;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.colorpicker_hex {
+  background: #0f314d;
+  position: absolute;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 72px;
+  height: 22px;
+  left: 209px;
+  top: 129px;
+}
+.colorpicker_hex:before {
+  content: "#";
+  color: #ffffff;
+  line-height: 22px;
+  margin-left: 6px;
+}
+.colorpicker_hex input {
+  right: 6px;
+}
+.colorpicker_field {
+  height: 22px;
+  width: 70px;
+  background: #0f314d;
+  position: absolute;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.colorpicker_field:before {
+  content: "";
+  color: #ffffff;
+  line-height: 22px;
+  margin-left: 6px;
+}
+.colorpicker_field span {
+  position: absolute;
+  width: 12px;
+  height: 22px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  cursor: n-resize;
+}
+.colorpicker_rgb_r {
+  top: 39px;
+  left: 209px;
+}
+.colorpicker_rgb_r:before {
+  content: "R";
+}
+.colorpicker_rgb_g {
+  top: 69px;
+  left: 209px;
+}
+.colorpicker_rgb_g:before {
+  content: "G";
+}
+.colorpicker_rgb_b {
+  top: 99px;
+  left: 209px;
+}
+.colorpicker_rgb_b:before {
+  content: "B";
+}
+.colorpicker_hsb_h {
+  top: 39px;
+  left: 290px;
+}
+.colorpicker_hsb_h:before {
+  content: "H";
+}
+.colorpicker_hsb_s {
+  top: 69px;
+  left: 290px;
+}
+.colorpicker_hsb_s:before {
+  content: "S";
+}
+.colorpicker_hsb_b {
+  top: 99px;
+  left: 290px;
+}
+.colorpicker_hsb_b:before {
+  content: "B";
+}
+.colorpicker_submit {
+  position: absolute;
+  height: 22px;
+  width: 70px;
+  background: #e04546;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #ffffff;
+  left: 290px;
+  top: 129px;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: 22px;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.colorpicker_submit:hover {
+  background: #e45f60;
+}
+.colorpicker_submit.colorpicker_focus {
+  background-position: bottom;
+}
+.colorpicker_slider {
+  background-position: bottom;
+}
